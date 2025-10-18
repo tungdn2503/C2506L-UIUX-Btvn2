@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="top-bar">
+        <h2>Quản trị Admin</h2>
+        <button onclick="logout()">Đăng xuất</button>
+    </div>
+    <div class="section">
+        <h3>Quản lý người dùng</h3>
+        <input type="text" id="user-name" placeholder="Họ tên">
+        <input type="email" id="user-email" placeholder="Email">
+        <input type="text" id="user-role" placeholder="Vai trò">
+        <button onclick="addUser()">Thêm người dùng</button>
+        <table>
+        <thead>
+            <tr><th>Họ tên</th><th>Email</th><th>Vai trò</th><th>Hành động</th></tr>
+        </thead>
+        <tbody id="user-table"></tbody>
+        </table>
+    </div>
+    <div class="section">
+        <h3>Quản lý sản phẩm</h3>
+        <input type="text" id="product-name" placeholder="Tên">
+        <input type="number" id="product-price" placeholder="Giá">
+        <input type="text" id="product-desc" placeholder="Mô tả">
+        <input type="text" id="product-img" placeholder="URL ảnh">
+        <button onclick="addProduct()">Thêm sản phẩm</button>
+        <table>
+        <thead>
+            <tr><th>Tên</th><th>Giá</th><th>Mô tả</th><th>Ảnh</th><th>Hành động</th></tr>
+        </thead>
+        <tbody id="product-table"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
